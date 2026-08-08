@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Neighbour's Corner | Kerala Grocery Store in Peterborough</title>
+
+    <meta name="description"
+          content="Neighbour's Corner is a local Kerala and South Indian grocery store in Peterborough, Ontario. Discover authentic groceries, spices, snacks, frozen foods and more.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #176b3a;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        .hero {
+            background:
+                linear-gradient(rgba(0, 80, 40, 0.65), rgba(0, 80, 40, 0.65)),
+                url("https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1600&q=80")
+                center/cover;
+
+            min-height: 520px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 21px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #f2b705;
+            color: #222;
+            padding: 13px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 34px;
+            color: #176b3a;
+            margin-bottom: 10px;
+        }
+
+        .about {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .products {
+            background: #f5f7f3;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .product-card {
+            background: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .product-card h3 {
+            color: #176b3a;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px 0;
+        }
+
+        footer {
+            background: #123d27;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Neighbour's Corner</div>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>The Taste of Kerala, Close to Home</h1>
+
+        <p>
+            Your neighbourhood destination for authentic Kerala
+            and South Indian groceries in Peterborough.
+        </p>
+
+        <a class="button" href="#contact">
+            Visit Us
+        </a>
+
+    </div>
+
+</section>
+
+<section id="about">
+
+    <div class="section-title">
+        <h2>Welcome to Neighbour's Corner</h2>
+    </div>
+
+    <div class="about">
+
+        <p>
+            Located in Peterborough, Ontario, Neighbour's Corner
+            is a local grocery store bringing the flavours of Kerala
+            and South India closer to home.
+        </p>
+
+        <br>
+
+        <p>
+            From everyday pantry staples and spices to snacks,
+            pickles, frozen foods, rice, flours and more,
+            we offer a selection of authentic products for
+            families and food lovers in the community.
+        </p>
+
+    </div>
+
+</section>
+
+<section id="products" class="products">
+
+    <div class="section-title">
+
+        <h2>What We Carry</h2>
+
+        <p>
+            A selection of favourites from Kerala and South India.
+        </p>
+
+    </div>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <h3>Spices & Masalas</h3>
+            <p>
+                Authentic spices, masalas and cooking essentials.
+            </p>
+        </div>
+
+        <div class="product-card">
+            <h3>Rice & Flours</h3>
+            <p>
+                Rice, flour and everyday South Indian pantry staples.
+            </p>
+        </div>
+
+        <div class="product-card">
+            <h3>Snacks & Sweets</h3>
+            <p>
+                Kerala favourites, snacks and traditional treats.
+            </p>
+        </div>
+
+        <div class="product-card">
+            <h3>Frozen Foods</h3>
+            <p>
+                Convenient frozen products for your favourite meals.
+            </p>
+        </div>
+
+        <div class="product-card">
+            <h3>Pickles & Ready Foods</h3>
+            <p>
+                Traditional flavours to make every meal special.
+            </p>
+        </div>
+
+        <div class="product-card">
+            <h3>And More</h3>
+            <p>
+                Discover more Indian and Kerala grocery favourites in store.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact" class="contact">
+
+    <div class="section-title">
+        <h2>Visit Neighbour's Corner</h2>
+    </div>
+
+    <p><strong>Address:</strong> 313 George St S, Peterborough, Ontario</p>
+
+    <p>
+        Come visit us and discover your favourite flavours from home.
+    </p>
+
+    <br>
+
+    <a
+        class="button"
+        href="https://www.google.com/maps/search/?api=1&query=313+George+St+S+Peterborough+Ontario"
+        target="_blank">
+        Get Directions
+    </a>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 Neighbour's Corner. All rights reserved.
+    </p>
+
+</footer>
+
+</body>
+</html>
