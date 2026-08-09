@@ -128,15 +128,21 @@
             margin: auto;
 
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1.15fr 0.85fr;
             gap: 55px;
-            align-items: stretch;
+            align-items: center;
         }
+
+        /*
+           WIDE RECTANGULAR IMAGE
+
+           The image is now landscape rather than square,
+           allowing more of the original store photo to show.
+        */
 
         .about-image {
             width: 100%;
-            height: 100%;
-            min-height: 500px;
+            aspect-ratio: 3 / 2;
             overflow: hidden;
             border-radius: 10px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
@@ -145,12 +151,12 @@
         .about-image img {
             width: 100%;
             height: 100%;
-            min-height: 500px;
-            object-fit: cover;
-            object-position: center center;
             display: block;
 
-            /* Shows more of the store */
+            object-fit: cover;
+            object-position: center center;
+
+            /* No artificial zoom */
             transform: scale(1);
         }
 
@@ -158,7 +164,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 20px 10px;
+            padding: 10px 5px;
         }
 
         .eyebrow {
@@ -200,7 +206,9 @@
             border-radius: 5px;
             font-size: 17px;
             font-weight: bold;
-            transition: transform 0.2s ease, opacity 0.2s ease;
+            transition:
+                transform 0.2s ease,
+                opacity 0.2s ease;
         }
 
         .button:hover {
@@ -314,7 +322,7 @@
 
 
         /* =========================
-           CONTACT / VISIT
+           CONTACT
         ========================= */
 
         .contact {
@@ -372,7 +380,7 @@
             font-size: 17px;
         }
 
-        /* Phone number is not bold */
+        /* Phone number is NOT bold */
         .contact-box a {
             color: #333333;
             font-size: 17px;
@@ -435,7 +443,7 @@
 
 
         /* =========================
-           MOBILE
+           TABLET
         ========================= */
 
         @media (max-width: 800px) {
@@ -479,14 +487,19 @@
                 gap: 35px;
             }
 
+            /*
+               Keep the image rectangular on mobile,
+               but slightly shorter for smaller screens.
+            */
+
             .about-image {
-                min-height: 400px;
-                height: 400px;
+                aspect-ratio: 16 / 10;
+                width: 100%;
             }
 
             .about-image img {
-                min-height: 400px;
-                height: 400px;
+                width: 100%;
+                height: 100%;
                 object-fit: cover;
                 transform: scale(1);
             }
@@ -514,6 +527,10 @@
         }
 
 
+        /* =========================
+           MOBILE
+        ========================= */
+
         @media (max-width: 550px) {
 
             .intro {
@@ -534,14 +551,17 @@
                 padding: 50px 6%;
             }
 
+            /*
+               Wide rectangle on small phones.
+            */
+
             .about-image {
-                height: 300px;
-                min-height: 300px;
+                aspect-ratio: 16 / 10;
             }
 
             .about-image img {
-                height: 300px;
-                min-height: 300px;
+                width: 100%;
+                height: 100%;
                 object-fit: cover;
                 transform: scale(1);
             }
@@ -586,7 +606,9 @@
 
         <div class="logo">
 
-            <a href="/" aria-label="Neighbour's Corner home">
+            <a
+                href="/"
+                aria-label="Neighbour's Corner home">
 
                 <img
                     src="/images/Neighbour%27s%20Corner%20Logo.jpg"
@@ -601,11 +623,17 @@
 
             <nav>
 
-                <a href="#about">About</a>
+                <a href="#about">
+                    About
+                </a>
 
-                <a href="#products">Products</a>
+                <a href="#products">
+                    Products
+                </a>
 
-                <a href="#contact">Contact</a>
+                <a href="#contact">
+                    Contact
+                </a>
 
             </nav>
 
@@ -650,6 +678,8 @@
         <div class="about-container">
 
 
+            <!-- Store Image -->
+
             <div class="about-image">
 
                 <img
@@ -658,6 +688,8 @@
 
             </div>
 
+
+            <!-- About Content -->
 
             <div class="about-content">
 
@@ -907,9 +939,11 @@
                     </h3>
 
                     <p>
+
                         <a href="tel:+17057616416">
                             (705) 761-6416
                         </a>
+
                     </p>
 
                 </div>
