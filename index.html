@@ -133,13 +133,6 @@
             align-items: center;
         }
 
-        /*
-           WIDE RECTANGULAR IMAGE
-
-           The image is now landscape rather than square,
-           allowing more of the original store photo to show.
-        */
-
         .about-image {
             width: 100%;
             aspect-ratio: 3 / 2;
@@ -152,11 +145,8 @@
             width: 100%;
             height: 100%;
             display: block;
-
             object-fit: cover;
             object-position: center center;
-
-            /* No artificial zoom */
             transform: scale(1);
         }
 
@@ -278,8 +268,22 @@
         }
 
         .product-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 15px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
             font-size: 38px;
-            margin-bottom: 15px;
+        }
+
+        .product-icon img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            display: block;
         }
 
         .product-card h3 {
@@ -380,7 +384,6 @@
             font-size: 17px;
         }
 
-        /* Phone number is NOT bold */
         .contact-box a {
             color: #333333;
             font-size: 17px;
@@ -487,11 +490,6 @@
                 gap: 35px;
             }
 
-            /*
-               Keep the image rectangular on mobile,
-               but slightly shorter for smaller screens.
-            */
-
             .about-image {
                 aspect-ratio: 16 / 10;
                 width: 100%;
@@ -551,10 +549,6 @@
                 padding: 50px 6%;
             }
 
-            /*
-               Wide rectangle on small phones.
-            */
-
             .about-image {
                 aspect-ratio: 16 / 10;
             }
@@ -572,6 +566,16 @@
 
             .product-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .product-icon {
+                width: 60px;
+                height: 60px;
+            }
+
+            .product-icon img {
+                width: 60px;
+                height: 60px;
             }
 
             .community {
@@ -678,8 +682,6 @@
         <div class="about-container">
 
 
-            <!-- Store Image -->
-
             <div class="about-image">
 
                 <img
@@ -688,8 +690,6 @@
 
             </div>
 
-
-            <!-- About Content -->
 
             <div class="about-content">
 
@@ -754,6 +754,8 @@
         <div class="product-grid">
 
 
+            <!-- Spices -->
+
             <div class="product-card">
 
                 <div class="product-icon">
@@ -770,6 +772,8 @@
 
             </div>
 
+
+            <!-- Rice -->
 
             <div class="product-card">
 
@@ -788,10 +792,16 @@
             </div>
 
 
+            <!-- Snacks & Sweets -->
+
             <div class="product-card">
 
                 <div class="product-icon">
-                    🍪
+
+                    <img
+                        src="/images/Indian%20snacks.png"
+                        alt="Indian snacks">
+
                 </div>
 
                 <h3>
@@ -804,6 +814,8 @@
 
             </div>
 
+
+            <!-- Frozen Foods -->
 
             <div class="product-card">
 
@@ -822,10 +834,16 @@
             </div>
 
 
+            <!-- Pickles & Ready Foods -->
+
             <div class="product-card">
 
                 <div class="product-icon">
-                    🥭
+
+                    <img
+                        src="/images/pickle%20jar.png"
+                        alt="Pickle jar">
+
                 </div>
 
                 <h3>
@@ -838,6 +856,8 @@
 
             </div>
 
+
+            <!-- More -->
 
             <div class="product-card">
 
