@@ -26,17 +26,21 @@
         header {
             background: #176b3a;
             color: white;
-            padding: 20px 8%;
+            padding: 18px 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .logo img {
-            height: 60px;
+            height: 80px;
             width: auto;
             display: block;
             border-radius: 6px;
+        }
+
+        .logo a {
+            display: block;
         }
 
         nav a {
@@ -173,10 +177,11 @@
             header {
                 flex-direction: column;
                 gap: 15px;
+                padding: 15px 5%;
             }
 
             .logo img {
-                height: 50px;
+                height: 65px;
             }
 
             nav a {
@@ -208,9 +213,11 @@
     <header>
 
         <div class="logo">
-            <img
-                src="/images/Neighbour%27s%20Corner%20Logo.jpg"
-                alt="Neighbour's Corner">
+            <a href="/" aria-label="Neighbour's Corner home">
+                <img
+                    src="/images/Neighbour%27s%20Corner%20Logo.jpg"
+                    alt="Neighbour's Corner">
+            </a>
         </div>
 
         <nav>
