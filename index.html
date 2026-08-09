@@ -15,10 +15,7 @@
         content="Neighbour's Corner is a Kerala and South Indian grocery store in Peterborough, Ontario. Find authentic spices, rice, flours, snacks, pickles, frozen foods and more at 313 George St S."
     >
 
-    <meta
-        name="author"
-        content="Neighbour's Corner"
-    >
+    <meta name="author" content="Neighbour's Corner">
 
     <meta
         name="robots"
@@ -64,7 +61,7 @@
     >
 
 
-    <!-- Twitter / Social Sharing -->
+    <!-- Twitter -->
 
     <meta
         name="twitter:card"
@@ -141,7 +138,6 @@
             "streetAddress": "313 George St S",
             "addressLocality": "Peterborough",
             "addressRegion": "ON",
-            "postalCode": "",
             "addressCountry": "CA"
         },
 
@@ -187,7 +183,6 @@
         }
 
         html {
-            scroll-behaviour: smooth;
             scroll-behavior: smooth;
         }
 
@@ -213,6 +208,7 @@
 
         header {
             background: #ffffff;
+
             padding: 12px 7%;
 
             display: flex;
@@ -244,7 +240,9 @@
         nav {
             display: flex;
             align-items: center;
+
             gap: 48px;
+
             white-space: nowrap;
         }
 
@@ -257,9 +255,11 @@
                 serif;
 
             font-size: 20px;
+
             font-weight: 800;
 
             letter-spacing: 2px;
+
             text-transform: uppercase;
 
             white-space: nowrap;
@@ -281,6 +281,7 @@
 
         nav a.contact-button {
             background: #f2b705;
+
             color: #222222;
 
             padding: 13px 25px;
@@ -288,6 +289,7 @@
             border-radius: 5px;
 
             font-size: 19px;
+
             font-weight: 800;
 
             letter-spacing: 1.6px;
@@ -302,7 +304,9 @@
 
         nav a.contact-button:hover {
             background: #e3aa00;
+
             color: #222222;
+
             transform: translateY(-2px);
         }
 
@@ -313,12 +317,15 @@
 
         .intro {
             padding: 80px 8% 70px;
+
             text-align: center;
+
             background: #ffffff;
         }
 
         .intro-inner {
             max-width: 900px;
+
             margin: auto;
         }
 
@@ -359,11 +366,13 @@
 
         .about-section {
             padding: 20px 8% 80px;
+
             background: #ffffff;
         }
 
         .about-container {
             max-width: 1150px;
+
             margin: auto;
 
             display: grid;
@@ -478,6 +487,7 @@
 
         .button:hover {
             transform: translateY(-2px);
+
             opacity: 0.92;
         }
 
@@ -488,6 +498,7 @@
 
         .products {
             padding: 80px 8%;
+
             background: #f5f7f3;
         }
 
@@ -578,6 +589,7 @@
             display: flex;
 
             align-items: center;
+
             justify-content: center;
 
             font-size: 38px;
@@ -623,6 +635,7 @@
 
         .community-inner {
             max-width: 850px;
+
             margin: auto;
         }
 
@@ -633,11 +646,13 @@
                 serif;
 
             font-size: 36px;
+
             margin-bottom: 15px;
         }
 
         .community p {
             font-size: 19px;
+
             line-height: 1.8;
         }
 
@@ -655,7 +670,8 @@
         }
 
         .contact-container {
-            max-width: 850px;
+            max-width: 1100px;
+
             margin: auto;
         }
 
@@ -688,26 +704,42 @@
 
         .contact-intro {
             font-size: 18px;
+
             margin-bottom: 35px;
         }
 
-        .contact-details {
+
+        /* Contact layout with map */
+
+        .contact-layout {
             display: grid;
 
             grid-template-columns:
-                repeat(3, 1fr);
+                0.9fr 1.1fr;
 
-            gap: 20px;
+            gap: 35px;
+
+            align-items: stretch;
 
             margin-bottom: 40px;
         }
 
+        .contact-info {
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 18px;
+        }
+
         .contact-box {
-            padding: 25px 15px;
+            padding: 25px 20px;
 
             background: #f5f7f3;
 
             border-radius: 8px;
+
+            text-align: center;
         }
 
         .contact-box h3 {
@@ -738,6 +770,35 @@
 
 
         /* =========================
+           MAP
+        ========================== */
+
+        .map-container {
+            width: 100%;
+
+            min-height: 390px;
+
+            border-radius: 10px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+
+            min-height: 390px;
+
+            border: 0;
+
+            display: block;
+        }
+
+
+        /* =========================
            FOOTER
         ========================== */
 
@@ -761,6 +822,7 @@
             display: flex;
 
             justify-content: center;
+
             align-items: center;
 
             gap: 20px;
@@ -770,9 +832,11 @@
             display: flex;
 
             align-items: center;
+
             justify-content: center;
 
             width: 42px;
+
             height: 42px;
 
             color: #ffffff;
@@ -784,6 +848,7 @@
 
         .footer-social-links a:hover {
             transform: scale(1.1);
+
             opacity: 0.8;
         }
 
@@ -811,16 +876,19 @@
 
             nav a {
                 font-size: 18px;
+
                 letter-spacing: 1.5px;
             }
 
             nav a.contact-button {
                 padding: 11px 18px;
+
                 font-size: 17px;
             }
 
             .about-container {
                 grid-template-columns: 1fr;
+
                 gap: 35px;
             }
 
@@ -833,11 +901,19 @@
             }
 
             .product-grid {
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns:
+                    1fr 1fr;
             }
 
-            .contact-details {
+            .contact-layout {
                 grid-template-columns: 1fr;
+            }
+
+            .contact-info {
+                display: grid;
+
+                grid-template-columns:
+                    repeat(3, 1fr);
             }
 
         }
@@ -895,7 +971,8 @@
             }
 
             nav a.contact-button {
-                padding: 8px 11px;
+                padding:
+                    8px 11px;
 
                 font-size: 12px;
 
@@ -940,6 +1017,7 @@
 
             .about-image img {
                 width: 100%;
+
                 height: 100%;
 
                 object-fit: cover;
@@ -989,6 +1067,18 @@
                 font-size: 32px;
             }
 
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+
+            .map-container {
+                min-height: 320px;
+            }
+
+            .map-container iframe {
+                min-height: 320px;
+            }
+
         }
 
 
@@ -1000,6 +1090,7 @@
 
             header {
                 padding-left: 2%;
+
                 padding-right: 2%;
             }
 
@@ -1013,6 +1104,7 @@
 
             nav a {
                 font-size: 11px;
+
                 letter-spacing: 0.5px;
             }
 
@@ -1093,7 +1185,7 @@
 
 
     <!-- =========================
-         MAIN CONTENT
+         MAIN
     ========================== -->
 
     <main>
@@ -1149,8 +1241,7 @@
                     </div>
 
                     <h2>
-                        A Neighbourhood Store
-                        With Flavours From Home
+                        Flavours From Home
                     </h2>
 
                     <p>
@@ -1196,7 +1287,7 @@
 
                 <p>
                     Discover a selection of authentic Kerala and South Indian
-                    favourites, along with everyday grocery essentials.
+                    favourites, along with grocery essentials.
                 </p>
 
             </div>
@@ -1361,7 +1452,7 @@
 
 
         <!-- =========================
-             CONTACT
+             CONTACT + MAP
         ========================== -->
 
         <section
@@ -1384,65 +1475,88 @@
                 </p>
 
 
-                <div class="contact-details">
+                <div class="contact-layout">
 
 
-                    <!-- Address -->
+                    <!-- Contact Information -->
 
-                    <div class="contact-box">
+                    <div class="contact-info">
 
-                        <h3>
-                            Address
-                        </h3>
 
-                        <p>
+                        <!-- Address -->
 
-                            <a
-                                href="https://www.google.com/maps/search/?api=1&amp;query=313+George+St+S+Peterborough+Ontario"
-                                target="_blank"
-                                rel="noopener">
+                        <div class="contact-box">
 
-                                313 George St S<br>
-                                Peterborough, Ontario
+                            <h3>
+                                Address
+                            </h3>
 
-                            </a>
+                            <p>
 
-                        </p>
+                                <a
+                                    href="https://www.google.com/maps/search/?api=1&amp;query=313+George+St+S+Peterborough+Ontario"
+                                    target="_blank"
+                                    rel="noopener">
+
+                                    313 George St S<br>
+                                    Peterborough, Ontario
+
+                                </a>
+
+                            </p>
+
+                        </div>
+
+
+                        <!-- Phone -->
+
+                        <div class="contact-box">
+
+                            <h3>
+                                Phone
+                            </h3>
+
+                            <p>
+
+                                <a href="tel:+17057616416">
+                                    (705) 761-6416
+                                </a>
+
+                            </p>
+
+                        </div>
+
+
+                        <!-- Hours -->
+
+                        <div class="contact-box">
+
+                            <h3>
+                                Hours
+                            </h3>
+
+                            <p>
+                                Open daily<br>
+                                10 a.m. – 10 p.m.
+                            </p>
+
+                        </div>
+
 
                     </div>
 
 
-                    <!-- Phone -->
+                    <!-- Google Maps -->
 
-                    <div class="contact-box">
+                    <div class="map-container">
 
-                        <h3>
-                            Phone
-                        </h3>
-
-                        <p>
-
-                            <a href="tel:+17057616416">
-                                (705) 761-6416
-                            </a>
-
-                        </p>
-
-                    </div>
-
-
-                    <!-- Hours -->
-
-                    <div class="contact-box">
-
-                        <h3>
-                            Hours
-                        </h3>
-
-                        <p>
-                            Open daily<br>
-                            10 a.m. – 10 p.m.
-                        </p>
+                        <iframe
+                            src="https://www.google.com/maps?q=313%20George%20St%20S%2C%20Peterborough%2C%20Ontario&output=embed"
+                            loading="lazy"
+                            allowfullscreen
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Neighbour's Corner location at 313 George St S, Peterborough, Ontario">
+                        </iframe>
 
                     </div>
 
@@ -1452,7 +1566,7 @@
 
                 <a
                     class="button"
-                    href="https://www.google.com/maps/search/?api=1&amp;query=313+George+St+S+Peterborough+Ontario"
+                    href="https://www.google.com/maps/dir/?api=1&amp;destination=313+George+St+S+Peterborough+Ontario"
                     target="_blank"
                     rel="noopener">
 
