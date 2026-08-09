@@ -10,6 +10,11 @@
     <meta name="description"
           content="Neighbour's Corner is a local Kerala and South Indian grocery store in Peterborough, Ontario. Discover authentic groceries, spices, snacks, frozen foods and more.">
 
+    <!-- Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
     <style>
 
         /* =========================
@@ -71,20 +76,22 @@
         nav {
             display: flex;
             align-items: center;
-            gap: 32px;
+            gap: 42px;
         }
 
         /*
-           More engaging navigation font
-           while keeping the overall site clean.
+           Main navigation
         */
 
         nav a {
             color: #176b3a;
-            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-            font-size: 18px;
-            font-weight: 700;
-            letter-spacing: 0.3px;
+            font-family: "Playfair Display", Georgia, serif;
+            font-size: 17px;
+            font-weight: 600;
+            letter-spacing: 1.8px;
+            text-transform: uppercase;
+            white-space: nowrap;
+
             transition:
                 color 0.2s ease,
                 transform 0.2s ease;
@@ -100,18 +107,19 @@
         */
 
         nav a.contact-button {
-            background: #176b3a;
-            color: #ffffff;
-            padding: 11px 20px;
-            border-radius: 6px;
-            font-size: 17px;
-            letter-spacing: 0.2px;
-            box-shadow: 0 2px 7px rgba(23, 107, 58, 0.18);
+            background: #f2b705;
+            color: #222222;
+            padding: 12px 22px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 1.4px;
+            box-shadow: 0 2px 7px rgba(0, 0, 0, 0.08);
         }
 
         nav a.contact-button:hover {
-            background: #0f4d29;
-            color: #ffffff;
+            background: #e3aa00;
+            color: #222222;
             transform: translateY(-2px);
         }
 
@@ -483,7 +491,7 @@
 
             header {
                 flex-direction: column;
-                gap: 12px;
+                gap: 15px;
                 padding: 12px 5%;
             }
 
@@ -492,16 +500,18 @@
             }
 
             nav {
-                gap: 20px;
+                gap: 25px;
             }
 
             nav a {
-                font-size: 16px;
+                font-size: 15px;
+                letter-spacing: 1.3px;
             }
 
             nav a.contact-button {
-                padding: 9px 15px;
-                font-size: 15px;
+                padding: 10px 16px;
+                font-size: 14px;
+                letter-spacing: 1.1px;
             }
 
             .intro {
@@ -565,6 +575,31 @@
         ========================= */
 
         @media (max-width: 550px) {
+
+            header {
+                padding: 10px 5%;
+            }
+
+            .logo img {
+                height: 95px;
+            }
+
+            nav {
+                gap: 14px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav a {
+                font-size: 13px;
+                letter-spacing: 1px;
+            }
+
+            nav a.contact-button {
+                padding: 8px 13px;
+                font-size: 12px;
+                letter-spacing: 0.9px;
+            }
 
             .intro {
                 padding: 50px 7% 35px;
@@ -664,18 +699,18 @@
             <nav>
 
                 <a href="#about">
-                    About
+                    ABOUT
                 </a>
 
                 <a href="#products">
-                    Products
+                    PRODUCTS
                 </a>
 
                 <a
                     href="#contact"
                     class="contact-button">
 
-                    Get in Touch
+                    GET IN TOUCH
 
                 </a>
 
