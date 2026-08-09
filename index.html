@@ -101,15 +101,6 @@
             margin: auto;
         }
 
-        .eyebrow {
-            color: #176b3a;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 14px;
-            font-weight: bold;
-            margin-bottom: 12px;
-        }
-
         .intro h1 {
             color: #176b3a;
             font-size: 42px;
@@ -158,7 +149,9 @@
             object-fit: cover;
             object-position: center center;
             display: block;
-            transform: scale(1.08);
+
+            /* Shows more of the store */
+            transform: scale(1);
         }
 
         .about-content {
@@ -166,6 +159,15 @@
             flex-direction: column;
             justify-content: center;
             padding: 20px 10px;
+        }
+
+        .eyebrow {
+            color: #176b3a;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 12px;
         }
 
         .about-content h2 {
@@ -220,6 +222,15 @@
             text-align: center;
             max-width: 750px;
             margin: 0 auto 45px;
+        }
+
+        .section-heading .eyebrow {
+            color: #176b3a;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 12px;
         }
 
         .section-heading h2 {
@@ -317,6 +328,15 @@
             margin: auto;
         }
 
+        .contact .eyebrow {
+            color: #176b3a;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
         .contact h2 {
             color: #176b3a;
             font-size: 40px;
@@ -352,7 +372,7 @@
             font-size: 17px;
         }
 
-        /* Phone number is intentionally NOT bold */
+        /* Phone number is not bold */
         .contact-box a {
             color: #333333;
             font-size: 17px;
@@ -466,6 +486,9 @@
 
             .about-image img {
                 min-height: 400px;
+                height: 400px;
+                object-fit: cover;
+                transform: scale(1);
             }
 
             .about-content {
@@ -519,7 +542,8 @@
             .about-image img {
                 height: 300px;
                 min-height: 300px;
-                transform: scale(1.08);
+                object-fit: cover;
+                transform: scale(1);
             }
 
             .about-content h2 {
@@ -599,10 +623,6 @@
 
         <div class="intro-inner">
 
-            <div class="eyebrow">
-                Welcome
-            </div>
-
             <h1>
                 Welcome to Neighbour's Corner
             </h1>
@@ -651,12 +671,6 @@
                 </h2>
 
                 <p>
-                    Neighbour's Corner is a local grocery store in
-                    Peterborough, Ontario, bringing together the flavours
-                    and familiar foods of Kerala and South India.
-                </p>
-
-                <p>
                     Whether you're looking for everyday pantry staples,
                     authentic spices, snacks, pickles, frozen foods,
                     rice or flours, we're here to help you find
@@ -665,9 +679,9 @@
 
                 <a
                     class="button"
-                    href="#products">
+                    href="#contact">
 
-                    Explore What We Carry
+                    Find Us
 
                 </a>
 
