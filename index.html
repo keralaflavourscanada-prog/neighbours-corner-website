@@ -161,39 +161,39 @@
             text-align: center;
         }
 
-        .contact p {
-            margin: 10px 0;
-        }
-
         .contact-info {
             max-width: 700px;
             margin: 0 auto;
         }
 
-        .phone {
-            font-size: 20px;
-            margin: 15px 0 30px;
+        .contact-detail {
+            font-size: 18px;
+            margin: 10px 0;
         }
 
-        .phone a {
-            color: #176b3a;
+        .contact-detail strong {
             font-weight: bold;
-            text-decoration: none;
         }
 
-        .phone a:hover {
+        .contact-detail a {
+            color: #176b3a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-detail a:hover {
             text-decoration: underline;
         }
 
-        .hours {
+        .store-hours {
             max-width: 600px;
-            margin: 30px auto;
+            margin: 35px auto;
         }
 
-        .hours h3 {
+        .store-hours h3 {
             color: #176b3a;
-            font-size: 24px;
-            margin-bottom: 15px;
+            font-size: 26px;
+            margin-bottom: 18px;
         }
 
         .hours-table {
@@ -205,15 +205,14 @@
             box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
         }
 
-        .hours-table th,
         .hours-table td {
-            padding: 12px 18px;
+            padding: 12px 20px;
             border-bottom: 1px solid #eee;
+            font-size: 17px;
         }
 
-        .hours-table th {
-            background: #176b3a;
-            color: white;
+        .hours-table td:first-child {
+            font-weight: bold;
             text-align: left;
         }
 
@@ -264,9 +263,13 @@
                 grid-template-columns: 1fr;
             }
 
-            .hours-table th,
+            .contact-detail {
+                font-size: 17px;
+            }
+
             .hours-table td {
-                padding: 10px 12px;
+                padding: 11px 15px;
+                font-size: 16px;
             }
         }
     </style>
@@ -423,35 +426,23 @@
 
         <div class="contact-info">
 
-            <p>
+            <p class="contact-detail">
                 <strong>Address:</strong>
                 313 George St S, Peterborough, Ontario
             </p>
 
-            <p class="phone">
+            <p class="contact-detail">
                 <strong>Phone:</strong>
                 <a href="tel:+17057616416">(705) 761-6416</a>
             </p>
 
-            <div class="hours">
+            <div class="store-hours">
 
-                <h3>Hours</h3>
+                <h3>Store Hours</h3>
 
                 <table class="hours-table">
 
-                    <thead>
-                        <tr>
-                            <th>Day</th>
-                            <th>Hours</th>
-                        </tr>
-                    </thead>
-
                     <tbody>
-
-                        <tr>
-                            <td>Saturday</td>
-                            <td>10 a.m. – 10 p.m.</td>
-                        </tr>
 
                         <tr>
                             <td>Sunday</td>
@@ -480,6 +471,11 @@
 
                         <tr>
                             <td>Friday</td>
+                            <td>10 a.m. – 10 p.m.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Saturday</td>
                             <td>10 a.m. – 10 p.m.</td>
                         </tr>
 
