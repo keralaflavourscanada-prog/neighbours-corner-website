@@ -87,47 +87,108 @@
 
 
         /* =========================
-           HERO
+           INTRO
         ========================= */
 
-        .hero {
-            min-height: 620px;
-
-            background:
-                linear-gradient(
-                    rgba(0, 55, 28, 0.35),
-                    rgba(0, 55, 28, 0.45)
-                ),
-                url("/images/Neighbour%27s%20Corner%20Store%20Inside%201%20Image.png")
-                center center / cover no-repeat;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
+        .intro {
+            padding: 75px 8% 65px;
             text-align: center;
-            color: #ffffff;
-
-            padding: 80px 25px;
+            background: #ffffff;
         }
 
-        .hero-content {
+        .intro-inner {
             max-width: 850px;
+            margin: auto;
         }
 
-        .hero h1 {
-            font-size: 58px;
-            line-height: 1.15;
-            margin-bottom: 22px;
-            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        .eyebrow {
+            color: #176b3a;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 12px;
         }
 
-        .hero p {
-            font-size: 22px;
-            line-height: 1.6;
-            margin-bottom: 32px;
-            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        .intro h1 {
+            color: #176b3a;
+            font-size: 42px;
+            margin-bottom: 20px;
+            line-height: 1.25;
         }
+
+        .intro p {
+            font-size: 19px;
+            line-height: 1.8;
+        }
+
+
+        /* =========================
+           ABOUT / STORE IMAGE
+        ========================= */
+
+        .about-section {
+            padding: 20px 8% 80px;
+            background: #ffffff;
+        }
+
+        .about-container {
+            max-width: 1150px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 55px;
+            align-items: stretch;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 100%;
+            min-height: 500px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            min-height: 500px;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            transform: scale(1.08);
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px 10px;
+        }
+
+        .about-content h2 {
+            color: #176b3a;
+            font-size: 38px;
+            line-height: 1.25;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            font-size: 18px;
+            margin-bottom: 18px;
+            line-height: 1.8;
+        }
+
+        .about-content .button {
+            align-self: flex-start;
+        }
+
+
+        /* =========================
+           BUTTON
+        ========================= */
 
         .button {
             display: inline-block;
@@ -147,94 +208,12 @@
 
 
         /* =========================
-           INTRO
-        ========================= */
-
-        .intro {
-            padding: 75px 8%;
-            text-align: center;
-            background: #ffffff;
-        }
-
-        .intro-inner {
-            max-width: 850px;
-            margin: auto;
-        }
-
-        .eyebrow {
-            color: #176b3a;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 14px;
-            font-weight: bold;
-            margin-bottom: 12px;
-        }
-
-        .intro h2 {
-            color: #176b3a;
-            font-size: 38px;
-            margin-bottom: 20px;
-        }
-
-        .intro p {
-            font-size: 19px;
-            line-height: 1.8;
-        }
-
-
-        /* =========================
-           ABOUT / STORE IMAGE
-        ========================= */
-
-        .about-section {
-            padding: 75px 8%;
-            background: #f5f7f3;
-        }
-
-        .about-container {
-            max-width: 1150px;
-            margin: auto;
-
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 55px;
-            align-items: center;
-        }
-
-        .about-image img {
-            width: 100%;
-            height: 470px;
-            object-fit: cover;
-            border-radius: 10px;
-            display: block;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
-        }
-
-        .about-content {
-            padding: 10px;
-        }
-
-        .about-content h2 {
-            color: #176b3a;
-            font-size: 38px;
-            line-height: 1.25;
-            margin-bottom: 20px;
-        }
-
-        .about-content p {
-            font-size: 18px;
-            margin-bottom: 18px;
-            line-height: 1.8;
-        }
-
-
-        /* =========================
            PRODUCTS
         ========================= */
 
         .products {
             padding: 80px 8%;
-            background: #ffffff;
+            background: #f5f7f3;
         }
 
         .section-heading {
@@ -297,7 +276,7 @@
 
 
         /* =========================
-           COMMUNITY STRIP
+           COMMUNITY
         ========================= */
 
         .community {
@@ -368,62 +347,20 @@
             margin-bottom: 8px;
         }
 
-        .contact-box p,
-        .contact-box a {
+        .contact-box p {
             color: #333333;
             font-size: 17px;
         }
 
+        /* Phone number is intentionally NOT bold */
         .contact-box a {
-            font-weight: bold;
+            color: #333333;
+            font-size: 17px;
+            font-weight: normal;
         }
 
         .contact-box a:hover {
             color: #176b3a;
-        }
-
-
-        /* =========================
-           STORE HOURS
-        ========================= */
-
-        .store-hours {
-            max-width: 650px;
-            margin: 0 auto 40px;
-        }
-
-        .store-hours h3 {
-            color: #176b3a;
-            font-size: 27px;
-            margin-bottom: 18px;
-        }
-
-        .hours-table {
-            width: 100%;
-            border-collapse: collapse;
-            background: #ffffff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
-        }
-
-        .hours-table td {
-            padding: 13px 20px;
-            border-bottom: 1px solid #eeeeee;
-            font-size: 17px;
-        }
-
-        .hours-table td:first-child {
-            text-align: left;
-            font-weight: bold;
-        }
-
-        .hours-table td:last-child {
-            text-align: right;
-        }
-
-        .hours-table tr:last-child td {
-            border-bottom: none;
         }
 
 
@@ -501,17 +438,20 @@
                 font-size: 16px;
             }
 
-            .hero {
-                min-height: 560px;
-                padding: 60px 20px;
+            .intro {
+                padding: 60px 6% 45px;
             }
 
-            .hero h1 {
-                font-size: 42px;
+            .intro h1 {
+                font-size: 36px;
             }
 
-            .hero p {
+            .intro p {
                 font-size: 18px;
+            }
+
+            .about-section {
+                padding: 20px 6% 60px;
             }
 
             .about-container {
@@ -519,12 +459,26 @@
                 gap: 35px;
             }
 
+            .about-image {
+                min-height: 400px;
+                height: 400px;
+            }
+
             .about-image img {
-                height: 350px;
+                min-height: 400px;
             }
 
             .about-content {
                 text-align: center;
+                padding: 10px;
+            }
+
+            .about-content h2 {
+                font-size: 34px;
+            }
+
+            .about-content .button {
+                align-self: center;
             }
 
             .product-grid {
@@ -540,35 +494,36 @@
         @media (max-width: 550px) {
 
             .intro {
-                padding: 55px 7%;
+                padding: 50px 7% 35px;
             }
 
-            .intro h2,
-            .section-heading h2,
-            .about-content h2 {
+            .intro h1 {
                 font-size: 30px;
             }
 
-            .hero {
-                min-height: 520px;
-            }
-
-            .hero h1 {
-                font-size: 36px;
-            }
-
-            .hero p {
+            .intro p {
                 font-size: 17px;
             }
 
             .about-section,
             .products,
             .contact {
-                padding: 55px 6%;
+                padding: 50px 6%;
+            }
+
+            .about-image {
+                height: 300px;
+                min-height: 300px;
             }
 
             .about-image img {
-                height: 280px;
+                height: 300px;
+                min-height: 300px;
+                transform: scale(1.08);
+            }
+
+            .about-content h2 {
+                font-size: 30px;
             }
 
             .product-grid {
@@ -576,7 +531,7 @@
             }
 
             .community {
-                padding: 55px 7%;
+                padding: 50px 7%;
             }
 
             .community h2 {
@@ -587,9 +542,8 @@
                 font-size: 17px;
             }
 
-            .hours-table td {
-                padding: 11px 13px;
-                font-size: 15px;
+            .contact h2 {
+                font-size: 32px;
             }
         }
 
@@ -638,39 +592,7 @@
 
 
     <!-- =========================
-         HERO
-    ========================== -->
-
-    <section class="hero">
-
-        <div class="hero-content">
-
-            <h1>
-                The Taste of Kerala,
-                Close to Home
-            </h1>
-
-            <p>
-                Your neighbourhood destination for authentic Kerala
-                and South Indian groceries in Peterborough.
-            </p>
-
-            <a
-                class="button"
-                href="#contact">
-
-                Visit Us
-
-            </a>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         INTRO
+         WELCOME
     ========================== -->
 
     <section class="intro">
@@ -678,17 +600,17 @@
         <div class="intro-inner">
 
             <div class="eyebrow">
-                Welcome to Neighbour's Corner
+                Welcome
             </div>
 
-            <h2>
-                Your Local Taste of Home
-            </h2>
+            <h1>
+                Welcome to Neighbour's Corner
+            </h1>
 
             <p>
-                Located in the heart of Peterborough, Neighbour's Corner
-                brings the authentic flavours of Kerala and South India
-                closer to our community.
+                Your local destination in Peterborough for authentic
+                Kerala and South Indian groceries, bringing the flavours
+                you love closer to home.
             </p>
 
         </div>
@@ -946,6 +868,8 @@
             <div class="contact-details">
 
 
+                <!-- Address -->
+
                 <div class="contact-box">
 
                     <h3>
@@ -959,6 +883,8 @@
 
                 </div>
 
+
+                <!-- Phone -->
 
                 <div class="contact-box">
 
@@ -975,6 +901,8 @@
                 </div>
 
 
+                <!-- Hours -->
+
                 <div class="contact-box">
 
                     <h3>
@@ -988,62 +916,6 @@
 
                 </div>
 
-
-            </div>
-
-
-
-            <!-- Store Hours -->
-
-            <div class="store-hours">
-
-                <h3>
-                    Store Hours
-                </h3>
-
-
-                <table class="hours-table">
-
-                    <tbody>
-
-                        <tr>
-                            <td>Sunday</td>
-                            <td>10 a.m. – 10 p.m.</td>
-                        </tr>
-
-                        <tr>
-                            <td>Monday</td>
-                            <td>10 a.m. – 10 p.m.</td>
-                        </tr>
-
-                        <tr>
-                            <td>Tuesday</td>
-                            <td>10 a.m. – 10 p.m.</td>
-                        </tr>
-
-                        <tr>
-                            <td>Wednesday</td>
-                            <td>10 a.m. – 10 p.m.</td>
-                        </tr>
-
-                        <tr>
-                            <td>Thursday</td>
-                            <td>10 a.m. – 10 p.m.</td>
-                        </tr>
-
-                        <tr>
-                            <td>Friday</td>
-                            <td>10 a.m. – 10 p.m.</td>
-                        </tr>
-
-                        <tr>
-                            <td>Saturday</td>
-                            <td>10 a.m. – 10 p.m.</td>
-                        </tr>
-
-                    </tbody>
-
-                </table>
 
             </div>
 
