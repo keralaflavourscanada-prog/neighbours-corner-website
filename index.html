@@ -33,7 +33,7 @@
         }
 
         .logo img {
-            height: 80px;
+            height: 160px;
             width: auto;
             display: block;
             border-radius: 6px;
@@ -165,6 +165,66 @@
             margin: 10px 0;
         }
 
+        .contact-info {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .phone {
+            font-size: 20px;
+            margin: 15px 0 30px;
+        }
+
+        .phone a {
+            color: #176b3a;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .phone a:hover {
+            text-decoration: underline;
+        }
+
+        .hours {
+            max-width: 600px;
+            margin: 30px auto;
+        }
+
+        .hours h3 {
+            color: #176b3a;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .hours-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .hours-table th,
+        .hours-table td {
+            padding: 12px 18px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .hours-table th {
+            background: #176b3a;
+            color: white;
+            text-align: left;
+        }
+
+        .hours-table td:last-child {
+            text-align: right;
+        }
+
+        .hours-table tr:last-child td {
+            border-bottom: none;
+        }
+
         footer {
             background: #123d27;
             color: white;
@@ -181,7 +241,7 @@
             }
 
             .logo img {
-                height: 65px;
+                height: 130px;
             }
 
             nav a {
@@ -202,6 +262,11 @@
 
             .product-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .hours-table th,
+            .hours-table td {
+                padding: 10px 12px;
             }
         }
     </style>
@@ -356,24 +421,89 @@
             <h2>Visit Neighbour's Corner</h2>
         </div>
 
-        <p>
-            <strong>Address:</strong>
-            313 George St S, Peterborough, Ontario
-        </p>
+        <div class="contact-info">
 
-        <p>
-            Come visit us and discover your favourite flavours from home.
-        </p>
+            <p>
+                <strong>Address:</strong>
+                313 George St S, Peterborough, Ontario
+            </p>
 
-        <br>
+            <p class="phone">
+                <strong>Phone:</strong>
+                <a href="tel:+17057616416">(705) 761-6416</a>
+            </p>
 
-        <a
-            class="button"
-            href="https://www.google.com/maps/search/?api=1&amp;query=313+George+St+S+Peterborough+Ontario"
-            target="_blank"
-            rel="noopener">
-            Get Directions
-        </a>
+            <div class="hours">
+
+                <h3>Hours</h3>
+
+                <table class="hours-table">
+
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Hours</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Saturday</td>
+                            <td>10 a.m. – 10 p.m.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sunday</td>
+                            <td>10 a.m. – 10 p.m.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Monday</td>
+                            <td>10 a.m. – 10 p.m.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>10 a.m. – 10 p.m.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>10 a.m. – 10 p.m.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Thursday</td>
+                            <td>10 a.m. – 10 p.m.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Friday</td>
+                            <td>10 a.m. – 10 p.m.</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <p>
+                Come visit us and discover your favourite flavours from home.
+            </p>
+
+            <br>
+
+            <a
+                class="button"
+                href="https://www.google.com/maps/search/?api=1&amp;query=313+George+St+S+Peterborough+Ontario"
+                target="_blank"
+                rel="noopener">
+                Get Directions
+            </a>
+
+        </div>
 
     </section>
 
