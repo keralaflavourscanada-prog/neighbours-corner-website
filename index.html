@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -552,296 +552,6 @@ nav a.contact-button:hover {
     font-size: 18px;
 }
 
-
-/* =========================
-   PRODUCTS OF THE MONTH
-========================== */
-
-.monthly-products {
-    max-width: 1150px;
-
-    margin:
-        0 auto 60px;
-
-    position: relative;
-}
-
-.monthly-title {
-    text-align: center;
-
-    margin-bottom: 25px;
-}
-
-.monthly-title h3 {
-    color: #176b3a;
-
-    font-family:
-        "Playfair Display",
-        Georgia,
-        serif;
-
-    font-size: 30px;
-
-    margin-bottom: 6px;
-}
-
-.monthly-title p {
-    color: #555;
-
-    font-size: 16px;
-}
-
-
-/* Carousel */
-
-.carousel {
-    position: relative;
-
-    overflow: hidden;
-
-    width: 100%;
-}
-
-.carousel-track {
-    display: flex;
-
-    transition:
-        transform 0.5s ease;
-
-    width: 100%;
-}
-
-.carousel-slide {
-    min-width: 100%;
-
-    display: flex;
-
-    justify-content: center;
-}
-
-.monthly-card {
-    width: 100%;
-
-    max-width: 850px;
-
-    min-height: 300px;
-
-    background: #ffffff;
-
-    border-radius: 10px;
-
-    padding: 35px;
-
-    display: grid;
-
-    grid-template-columns:
-        1fr 1fr;
-
-    gap: 40px;
-
-    align-items: center;
-
-    box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.09);
-
-    border:
-        1px solid #e5e5e5;
-}
-
-.monthly-product-image {
-    width: 100%;
-
-    height: 280px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-}
-
-.monthly-product-image img {
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: contain;
-
-    display: block;
-}
-
-.monthly-product-content {
-    text-align: left;
-}
-
-.monthly-badge {
-    display: inline-block;
-
-    background: #176b3a;
-
-    color: #ffffff;
-
-    padding: 6px 12px;
-
-    border-radius: 4px;
-
-    font-size: 12px;
-
-    font-weight: bold;
-
-    letter-spacing: 1.2px;
-
-    text-transform: uppercase;
-
-    margin-bottom: 12px;
-}
-
-.monthly-product-content h4 {
-    color: #176b3a;
-
-    font-family:
-        "Playfair Display",
-        Georgia,
-        serif;
-
-    font-size: 28px;
-
-    line-height: 1.25;
-
-    margin-bottom: 12px;
-}
-
-.monthly-product-content p {
-    color: #555;
-
-    font-size: 16px;
-
-    margin-bottom: 18px;
-}
-
-.price {
-    display: flex;
-
-    align-items: baseline;
-
-    gap: 12px;
-
-    margin-bottom: 20px;
-}
-
-.old-price {
-    color: #777;
-
-    font-size: 17px;
-
-    text-decoration: line-through;
-}
-
-.sale-price {
-    color: #176b3a;
-
-    font-size: 32px;
-
-    font-weight: 800;
-
-    line-height: 1;
-}
-
-
-/* Carousel controls */
-
-.carousel-button {
-    position: absolute;
-
-    top: 50%;
-
-    transform: translateY(-50%);
-
-    width: 42px;
-
-    height: 42px;
-
-    border: none;
-
-    border-radius: 50%;
-
-    background: #176b3a;
-
-    color: #ffffff;
-
-    font-size: 25px;
-
-    line-height: 1;
-
-    cursor: pointer;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    z-index: 2;
-
-    transition:
-        background 0.2s ease,
-        transform 0.2s ease;
-}
-
-.carousel-button:hover {
-    background: #0f4d29;
-
-    transform:
-        translateY(-50%)
-        scale(1.05);
-}
-
-.carousel-button.prev {
-    left: 10px;
-}
-
-.carousel-button.next {
-    right: 10px;
-}
-
-
-/* Carousel dots */
-
-.carousel-dots {
-    display: flex;
-
-    justify-content: center;
-
-    gap: 8px;
-
-    margin-top: 20px;
-}
-
-.carousel-dot {
-    width: 9px;
-
-    height: 9px;
-
-    border-radius: 50%;
-
-    border: none;
-
-    background: #c7c7c7;
-
-    cursor: pointer;
-
-    padding: 0;
-}
-
-.carousel-dot.active {
-    background: #176b3a;
-
-    transform: scale(1.15);
-}
-
-
-/* Product grid */
-
 .product-grid {
     max-width: 1150px;
 
@@ -916,6 +626,171 @@ nav a.contact-button:hover {
     font-size: 16px;
 
     color: #555;
+}
+
+
+/* =========================
+   PRODUCTS OF THE MONTH
+========================== */
+
+.monthly-products {
+    max-width: 1150px;
+
+    margin: 65px auto 0;
+}
+
+.monthly-heading {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.monthly-heading .eyebrow {
+    margin-bottom: 8px;
+}
+
+.monthly-heading h2 {
+    color: #176b3a;
+
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    font-size: 34px;
+
+    margin-bottom: 8px;
+}
+
+.monthly-heading p {
+    font-size: 17px;
+
+    color: #555;
+}
+
+.monthly-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.monthly-card {
+    background: #ffffff;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    border:
+        1px solid #e4e4e4;
+
+    display: grid;
+
+    grid-template-columns:
+        0.9fr 1.1fr;
+
+    align-items: center;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.07);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.monthly-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.1);
+}
+
+.monthly-image {
+    height: 230px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    background: #ffffff;
+}
+
+.monthly-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+.monthly-content {
+    padding: 25px 25px 25px 10px;
+}
+
+.monthly-badge {
+    display: inline-block;
+
+    color: #176b3a;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 8px;
+}
+
+.monthly-content h3 {
+    color: #176b3a;
+
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    font-size: 23px;
+
+    line-height: 1.3;
+
+    margin-bottom: 12px;
+}
+
+.price {
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 10px;
+
+    margin-top: 8px;
+}
+
+.sale-price {
+    color: #176b3a;
+
+    font-size: 27px;
+
+    font-weight: bold;
+}
+
+.original-price {
+    color: #777;
+
+    font-size: 17px;
+
+    text-decoration: line-through;
 }
 
 
@@ -1104,25 +979,18 @@ nav a.contact-button:hover {
    GOOGLE REVIEWS
 ========================== */
 
-.google-review {
-    margin:
-        40px auto 0;
-
-    max-width: 650px;
+.google-reviews {
+    margin-top: 45px;
 
     text-align: center;
 
-    padding: 28px 25px;
+    padding-top: 30px;
 
-    background: #f5f7f3;
-
-    border-radius: 10px;
-
-    border:
-        1px solid #e6e6e6;
+    border-top:
+        1px solid #eeeeee;
 }
 
-.google-review h3 {
+.google-reviews h3 {
     color: #176b3a;
 
     font-family:
@@ -1130,21 +998,29 @@ nav a.contact-button:hover {
         Georgia,
         serif;
 
-    font-size: 25px;
+    font-size: 30px;
 
-    margin-bottom: 6px;
+    margin-bottom: 10px;
 }
 
 .google-rating {
     display: flex;
 
-    justify-content: center;
-
     align-items: center;
+
+    justify-content: center;
 
     gap: 10px;
 
-    margin-bottom: 7px;
+    margin-bottom: 8px;
+}
+
+.google-rating-number {
+    font-size: 23px;
+
+    font-weight: bold;
+
+    color: #333333;
 }
 
 .google-stars {
@@ -1157,34 +1033,22 @@ nav a.contact-button:hover {
     line-height: 1;
 }
 
-.google-score {
-    color: #333333;
-
-    font-size: 20px;
-
-    font-weight: bold;
-}
-
-.google-review p {
-    color: #555;
-
+.google-reviews p {
     font-size: 16px;
 
-    margin-bottom: 4px;
+    color: #555555;
 }
 
-.google-review-link {
+.google-reviews a {
     color: #1a73e8;
 
     font-weight: bold;
 
-    font-size: 16px;
-
-    text-decoration: underline;
+    text-decoration: none;
 }
 
-.google-review-link:hover {
-    color: #1558b0;
+.google-reviews a:hover {
+    text-decoration: underline;
 }
 
 
@@ -1295,6 +1159,10 @@ footer p {
             1fr 1fr;
     }
 
+    .monthly-grid {
+        grid-template-columns: 1fr;
+    }
+
     .contact-layout {
         grid-template-columns: 1fr;
     }
@@ -1304,10 +1172,6 @@ footer p {
 
         grid-template-columns:
             repeat(3, 1fr);
-    }
-
-    .monthly-card {
-        max-width: 750px;
     }
 
 }
@@ -1422,63 +1286,6 @@ footer p {
     }
 
 
-    /* Monthly products */
-
-    .monthly-title h3 {
-        font-size: 26px;
-    }
-
-    .monthly-card {
-        grid-template-columns: 1fr;
-
-        gap: 20px;
-
-        padding: 25px 20px;
-
-        min-height: auto;
-    }
-
-    .monthly-product-image {
-        height: 210px;
-    }
-
-    .monthly-product-content {
-        text-align: center;
-    }
-
-    .monthly-badge {
-        margin-bottom: 10px;
-    }
-
-    .monthly-product-content h4 {
-        font-size: 25px;
-    }
-
-    .price {
-        justify-content: center;
-    }
-
-    .sale-price {
-        font-size: 29px;
-    }
-
-    .carousel-button {
-        width: 36px;
-
-        height: 36px;
-
-        font-size: 21px;
-    }
-
-    .carousel-button.prev {
-        left: 5px;
-    }
-
-    .carousel-button.next {
-        right: 5px;
-    }
-
-
     /* Products */
 
     .product-grid {
@@ -1493,6 +1300,41 @@ footer p {
     .product-icon img {
         width: 60px;
         height: 60px;
+    }
+
+
+    /* Products of the month */
+
+    .monthly-products {
+        margin-top: 50px;
+    }
+
+    .monthly-heading h2 {
+        font-size: 29px;
+    }
+
+    .monthly-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .monthly-card {
+        grid-template-columns: 1fr;
+    }
+
+    .monthly-image {
+        height: 220px;
+
+        padding: 20px;
+    }
+
+    .monthly-content {
+        padding: 0 25px 25px;
+
+        text-align: center;
+    }
+
+    .price {
+        justify-content: center;
     }
 
 
@@ -1530,9 +1372,14 @@ footer p {
         min-height: 320px;
     }
 
-    .google-review {
-        padding:
-            25px 18px;
+    .google-reviews {
+        margin-top: 40px;
+
+        padding-top: 25px;
+    }
+
+    .google-reviews h3 {
+        font-size: 27px;
     }
 
 }
@@ -1731,7 +1578,6 @@ footer p {
     id="products"
     class="products">
 
-
     <div class="section-heading">
 
         <div class="eyebrow">
@@ -1749,198 +1595,6 @@ footer p {
 
     </div>
 
-
-
-    <!-- =========================
-         PRODUCTS OF THE MONTH
-    ========================== -->
-
-    <div class="monthly-products">
-
-
-        <div class="monthly-title">
-
-            <h3>
-                Products of the Month
-            </h3>
-
-            <p>
-                Special prices available while supplies last.
-            </p>
-
-        </div>
-
-
-        <div class="carousel">
-
-            <div
-                class="carousel-track"
-                id="carouselTrack">
-
-
-                <!-- Banana Chips -->
-
-                <div class="carousel-slide">
-
-                    <div class="monthly-card">
-
-                        <div class="monthly-product-image">
-
-                            <img
-                                src="/images/Delicious%20Delight%20Banana%20Chips.png"
-                                alt="Delicious Delight Banana Chips"
-                                loading="lazy">
-
-                        </div>
-
-
-                        <div class="monthly-product-content">
-
-                            <span class="monthly-badge">
-                                Product of the Month
-                            </span>
-
-                            <h4>
-                                Delicious Delight Banana Chips
-                            </h4>
-
-                            <p>
-                                A classic Kerala favourite, perfect
-                                for snacking or sharing.
-                            </p>
-
-
-                            <div class="price">
-
-                                <span class="old-price">
-                                    $8.99
-                                </span>
-
-                                <span class="sale-price">
-                                    $6.99
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- KT Matta Rice -->
-
-                <div class="carousel-slide">
-
-                    <div class="monthly-card">
-
-                        <div class="monthly-product-image">
-
-                            <img
-                                src="/images/KT%20Matta%20Rice.png"
-                                alt="KT Matta Rice"
-                                loading="lazy">
-
-                        </div>
-
-
-                        <div class="monthly-product-content">
-
-                            <span class="monthly-badge">
-                                Product of the Month
-                            </span>
-
-                            <h4>
-                                KT Matta Rice
-                            </h4>
-
-                            <p>
-                                Authentic Kerala matta rice,
-                                a staple for traditional meals.
-                            </p>
-
-
-                            <div class="price">
-
-                                <span class="old-price">
-                                    $20.99
-                                </span>
-
-                                <span class="sale-price">
-                                    $18.99
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-
-            <!-- Previous -->
-
-            <button
-                class="carousel-button prev"
-                type="button"
-                aria-label="Previous product"
-                onclick="moveCarousel(-1)">
-
-                &#8249;
-
-            </button>
-
-
-            <!-- Next -->
-
-            <button
-                class="carousel-button next"
-                type="button"
-                aria-label="Next product"
-                onclick="moveCarousel(1)">
-
-                &#8250;
-
-            </button>
-
-        </div>
-
-
-        <!-- Dots -->
-
-        <div
-            class="carousel-dots"
-            aria-label="Product carousel navigation">
-
-            <button
-                class="carousel-dot active"
-                type="button"
-                aria-label="Show Banana Chips"
-                onclick="showSlide(0)">
-            </button>
-
-            <button
-                class="carousel-dot"
-                type="button"
-                aria-label="Show KT Matta Rice"
-                onclick="showSlide(1)">
-            </button>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- =========================
-         PRODUCT CATEGORIES
-    ========================== -->
 
     <div class="product-grid">
 
@@ -2069,6 +1723,118 @@ footer p {
 
         </div>
 
+
+    </div>
+
+
+
+    <!-- =========================
+         PRODUCTS OF THE MONTH
+    ========================== -->
+
+    <div class="monthly-products">
+
+        <div class="monthly-heading">
+
+            <div class="eyebrow">
+                Special Offers
+            </div>
+
+            <h2>
+                Products of the Month
+            </h2>
+
+            <p>
+                Enjoy special pricing on two customer favourites.
+            </p>
+
+        </div>
+
+
+        <div class="monthly-grid">
+
+
+            <!-- Banana Chips -->
+
+            <div class="monthly-card">
+
+                <div class="monthly-image">
+
+                    <img
+                        src="/images/Delicious%20Delight%20Banana%20Chips.png"
+                        alt="Delicious Delight Banana Chips"
+                        loading="lazy">
+
+                </div>
+
+                <div class="monthly-content">
+
+                    <div class="monthly-badge">
+                        Product of the Month
+                    </div>
+
+                    <h3>
+                        Delicious Delight Banana Chips
+                    </h3>
+
+                    <div class="price">
+
+                        <span class="sale-price">
+                            $6.99
+                        </span>
+
+                        <span class="original-price">
+                            $8.99
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- KT Matta Rice -->
+
+            <div class="monthly-card">
+
+                <div class="monthly-image">
+
+                    <img
+                        src="/images/KT%20Matta%20Rice.png"
+                        alt="KT Matta Rice"
+                        loading="lazy">
+
+                </div>
+
+                <div class="monthly-content">
+
+                    <div class="monthly-badge">
+                        Product of the Month
+                    </div>
+
+                    <h3>
+                        KT Matta Rice
+                    </h3>
+
+                    <div class="price">
+
+                        <span class="sale-price">
+                            $18.99
+                        </span>
+
+                        <span class="original-price">
+                            $20.99
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
 
     </div>
 
@@ -2231,44 +1997,42 @@ footer p {
              GOOGLE REVIEWS
         ========================== -->
 
-        <div class="google-review">
+        <div class="google-reviews">
 
             <h3>
-                Google Reviews
+                What Our Community Says
             </h3>
-
 
             <div class="google-rating">
 
+                <span class="google-rating-number">
+                    4.7
+                </span>
+
                 <span
                     class="google-stars"
-                    aria-label="5 out of 5 stars">
+                    aria-label="4.7 out of 5 stars">
 
                     ★★★★★
 
                 </span>
 
-                <span class="google-score">
-                    4.7
-                </span>
-
             </div>
 
-
             <p>
-                Rated 4.7 out of 5 on Google
+
+                Rated 4.7 out of 5 on
+
+                <a
+                    href="https://www.google.com/search?sca_esv=c22c990d6aa7f981&amp;sxsrf=APpeQnu5HIETiDDgG8QGMTlq-NURpE53BA:1786396013048&amp;q=neighbors+corner+peterborough&amp;si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-__-Cr9iQgyy5h7VTqtebC5itrIeIDnQ4KyGx21_YaYb73EBwh_72sjfuPXmI1uTh5amK5v94dGXCS-YZMOWUgIz-vEWS2m9Rub1LDXk0m9jzzjADgQ%3D%3D&amp;uds=AJ5uw19tc558UO76uNE3i9QYuudMq2NflJx8h1YjCJZV1EKZqAqoQHdIxWgeNKGLqh4mX6rdeF-IKplXi4_MM-vP-4g3qH7BQfokcaucjH4nRI6WXLU59mWiKazvlmr1LI_LxGRyzgqV&amp;sa=X&amp;ved=2ahUKEwjUmaTe-5aWAxWLNIYAHdIgGEkQrrQLegQIHhAA&amp;biw=1536&amp;bih=695&amp;dpr=1.25"
+                    target="_blank"
+                    rel="noopener">
+
+                    Google Reviews
+
+                </a>
+
             </p>
-
-
-            <a
-                class="google-review-link"
-                href="https://www.google.com/search?sca_esv=c22c990d6aa7f981&amp;sxsrf=APpeQnu5HIETiDDgG8QGMTlq-NURpE53BA:1786396013048&amp;q=neighbors+corner+peterborough&amp;si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-__-Cr9iQgyy5h7VTqtebC5itrIeIDnQ4KyGx21_YaYb73EBwh_72sjfuPXmI1uTh5amK5v94dGXCS-YZMOWUgIz-vEWS2m9Rub1LDXk0m9jzzjADgQ%3D%3D&amp;uds=AJ5uw19tc558UO76uNE3i9QYuudMq2NflJx8h1YjCJZV1EKZqAqoQHdIxWgeNKGLqh4mX6rdeF-IKplXi4_MM-vP-4g3qH7BQfokcaucjH4nRI6WXLU59mWiKazvlmr1LI_LxGRyzgqV&amp;sa=X&amp;ved=2ahUKEwjUmaTe-5aWAxWLNIYAHdIgGEkQrrQLegQIHhAA&amp;biw=1536&amp;bih=695&amp;dpr=1.25"
-                target="_blank"
-                rel="noopener">
-
-                View Google Reviews
-
-            </a>
 
         </div>
 
@@ -2365,79 +2129,6 @@ footer p {
     </div>
 
 </footer>
-
-
-
-<!-- =========================
-     CAROUSEL JAVASCRIPT
-========================== -->
-
-<script>
-
-let currentSlide = 0;
-
-const track =
-    document.getElementById("carouselTrack");
-
-const dots =
-    document.querySelectorAll(".carousel-dot");
-
-const totalSlides = 2;
-
-
-function showSlide(index) {
-
-    if (index < 0) {
-        index = totalSlides - 1;
-    }
-
-    if (index >= totalSlides) {
-        index = 0;
-    }
-
-    currentSlide = index;
-
-    track.style.transform =
-        "translateX(-" +
-        (currentSlide * 100) +
-        "%)";
-
-
-    dots.forEach(
-        (dot, dotIndex) => {
-
-            dot.classList.toggle(
-                "active",
-                dotIndex === currentSlide
-            );
-
-        }
-    );
-
-}
-
-
-function moveCarousel(direction) {
-
-    showSlide(
-        currentSlide + direction
-    );
-
-}
-
-
-/* Automatic carousel */
-
-setInterval(
-    () => {
-
-        moveCarousel(1);
-
-    },
-    5000
-);
-
-</script>
 
 
 </body>
